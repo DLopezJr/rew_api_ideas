@@ -6,6 +6,10 @@ ECHO;
 ECHO Running "REW_run_4_measurements.bat"...
 
 ::==============================================================================
+:: SET VARIABLES
+SET PAUSE_TIME=15
+
+::==============================================================================
 :: MEASUREMENT_1
 
 ::====================
@@ -17,7 +21,7 @@ curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json"
 curl -X POST "http://localhost:4735/measure/command" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"command\": \"SPL\"}"
 
 :: PAUSE SCRIPT UNTIL MEASUREMENT IS DONE
-timeout 10
+timeout %PAUSE_TIME%
 ::====================
 
 ::==============================================================================
@@ -32,7 +36,7 @@ curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json"
 curl -X POST "http://localhost:4735/measure/command" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"command\": \"SPL\"}"
 
 :: PAUSE SCRIPT UNTIL MEASUREMENT IS DONE
-timeout 10
+timeout %PAUSE_TIME%
 ::====================
 
 ::==============================================================================
@@ -47,7 +51,7 @@ curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json"
 curl -X POST "http://localhost:4735/measure/command" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"command\": \"SPL\"}"
 
 :: PAUSE SCRIPT UNTIL MEASUREMENT IS DONE
-timeout 10
+timeout %PAUSE_TIME%
 ::====================
 
 ::==============================================================================
@@ -62,7 +66,7 @@ curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json"
 curl -X POST "http://localhost:4735/measure/command" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"command\": \"SPL\"}"
 
 :: PAUSE SCRIPT UNTIL MEASUREMENT IS DONE
-timeout 10
+timeout %PAUSE_TIME%
 ::====================
 
 ::==============================================================================
