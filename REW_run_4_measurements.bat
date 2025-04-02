@@ -67,6 +67,7 @@ timeout %PAUSE_TIME%
 
 ::==============================================================================
 :: Keep Terminal alive
+ECHO script is completed
 
 ECHO;
 PAUSE
