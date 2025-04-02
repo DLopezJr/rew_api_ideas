@@ -14,7 +14,7 @@ SET PAUSE_TIME=15
 
 ::====================
 :: SET Measurement_1
-curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"value\": -20, \"dBFS\": \"string\"}"
+curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"value\": -20, \"unit\": \"dBFS\"}"
 
 
 :: GET Measurement_1
@@ -29,7 +29,7 @@ timeout %PAUSE_TIME%
 
 ::====================
 :: SET Measurement_2
-curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"value\": -18, \"dBFS\": \"string\"}"
+curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"value\": -18, \"unit\": \"dBFS\"}"
 ,
 
 :: GET Measurement_2
@@ -44,7 +44,7 @@ timeout %PAUSE_TIME%
 
 ::====================
 :: SET Measurement_3
-curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"value\": -16, \"dBFS\": \"string\"}"
+curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"value\": -16, \"unit\": \"dBFS\"}"
 
 
 :: GET Measurement_3
@@ -59,7 +59,7 @@ timeout %PAUSE_TIME%
 
 ::====================
 :: SET Measurement_4
-curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"value\": -14, \"dBFS\": \"string\"}"
+curl -X POST "http://localhost:4735/measure/level" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"value\": -14, \"unit\": \"dBFS\"}"
 ,
 
 :: GET Measurement_4
